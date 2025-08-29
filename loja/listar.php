@@ -22,12 +22,12 @@ include 'cabecalho.php';
                 while ($produto = $stmt->fetch(PDO::FETCH_ASSOC)) {
                     echo "<tr>";
                     echo "<td>".$produto['id']."</td>";
-                    echo "<td>". $produto['nome'] ."</td>";
-                    echo "<td>". $produto['preco'] ."</td>";
-                    echo "<td>". $produto['quantidade'] ."</td>";
+                    echo "<td>". $produto['nome']."</td>";
+                    echo "<td>". $produto['preco']."</td>";
+                    echo "<td>". $produto['quantidade']."</td>";
                     echo "<td>
                           <div class='btn-group' role='group'>
-                        <a href='#' type='button' class='btn btn-danger'>Atualizar</a>
+                        <a href='form_atualizar.php' type='button' class='btn btn-danger'>Atualizar</a>
                         <a href='#' type='button' class='btn btn-warning'>Apagar</a>
                         </div>
                     </td>
