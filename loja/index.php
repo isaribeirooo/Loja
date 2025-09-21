@@ -11,7 +11,7 @@ while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         echo "<img src='{$row['imagem']}' alt='{$row['nome']}'>";
             echo "<h3>{$row['nome']}</h3>";
                 echo "<p class='preco'>R$ " . number_format($row['preco'], 2, ',', '.') . "</p>";
-                    echo "<p>{$row['descricao']}</p>";
+                    
                         echo "<a href='listar.php' class='btn'>Ver detalhes</a>";
                             echo "</div>";
                             }
