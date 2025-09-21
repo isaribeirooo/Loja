@@ -1,7 +1,6 @@
 <?php 
 include 'cabecalho.php';
 $id = $_GET['id'];
-echo "Codigo id = $id";
 ?>
 <body>
     <div class="container">

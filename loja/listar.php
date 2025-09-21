@@ -19,7 +19,6 @@
                                                                             echo "<td>{$row['id']}</td>";
                                                                                     echo "<td>{$row['nome']}</td>";
                                                                                             echo "<td>R$ " . number_format($row['preco'], 2, ',', '.') . "</td>";
-                                                                                                    echo "<td><img src='{$row['imagem']}' width='60'></td>";
                                                                                                             echo "<td>
                                                                                                                             <a href='form_atualizar.php?id={$row['id']}' class='btn'>Editar</a>
                                                                                                                                           </td>";
