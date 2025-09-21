@@ -1,17 +1,23 @@
+
+<?php include "cabecalho.php"; ?>
+<?php include "conexao.php"; ?>
+
+<h2 style="text-align:center; margin:20px 0;">Coleção Style’s Forever</h2>
+<div class="produtos">
 <?php
-   include 'cabecalho.php';
-?>
-<body>
-    <div class="container">
-        <h1>Bem vindo ao 1° Sistema com CRUD</h1>
-        <h2>Isadora Ribeiro e Ana Portela</h2>
-        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-        <a href= "form_cadastrar.php" type="a" class="btn btn-danger">Cadastrar</a>
-        <a href= "listar.php" type="a" class="btn btn-warning">Listar</a>
-        </div>
-    </div>
-     
-    <?php
-    ?>
-</body>
-</html>
+$stmt = $pdo->query("SELECT * FROM produtos");
+while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    echo "<div class='produto'>";
+        echo "<img src='{$row['imagem']}' alt='{$row['nome']}'>";
+            echo "<h3>{$row['nome']}</h3>";
+                echo "<p class='preco'>R$ " . number_format($row['preco'], 2, ',', '.') . "</p>";
+                    echo "<p>{$row['descricao']}</p>";
+                        echo "<a href='listar.php' class='btn'>Ver detalhes</a>";
+                            echo "</div>";
+                            }
+                            ?>
+                            </div>
+
+                            </main>
+                            </body>
+                            </html>

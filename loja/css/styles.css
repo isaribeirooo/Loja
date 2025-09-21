@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+  margin: 0;
+    padding: 0;
+      box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+          background: #f7f7f7;
+            color: #333;
+            }
+
+            /* Cabeçalho */
+            header {
+              background: #111;
+                color: #fff;
+                  padding: 20px;
+                    text-align: center;
+                    }
+
+                    header h1 {
+                      font-size: 2rem;
+                        margin-bottom: 10px;
+                        }
+
+                        header nav a {
+                          color: #fff;
+                            margin: 0 10px;
+                              text-decoration: none;
+                                font-weight: bold;
+                                  transition: color 0.3s;
+                                  }
+
+                                  header nav a:hover {
+                                    color: #e91e63;
+                                    }
+
+                                    /* Área de produtos */
+                                    .produtos {
+                                      display: grid;
+                                        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                                          gap: 20px;
+                                            padding: 30px;
+                                            }
+
+                                            .produto {
+                                              background: #fff;
+                                                border: 1px solid #ddd;
+                                                  border-radius: 10px;
+                                                    text-align: center;
+                                                      padding: 15px;
+                                                        transition: transform 0.2s, box-shadow 0.2s;
+                                                        }
+
+                                                        .produto:hover {
+                                                          transform: scale(1.03);
+                                                            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                                                            }
+
+                                                            .produto img {
+                                                              max-width: 100%;
+                                                                height: 250px;
+                                                                  object-fit: cover;
+                                                                    border-radius: 10px;
+                                                                    }
+
+                                                                    .produto h3 {
+                                                                      margin: 10px 0;
+                                                                        font-size: 1.2rem;
+                                                                        }
+
+                                                                        .produto p {
+                                                                          color: #555;
+                                                                            margin-bottom: 10px;
+                                                                            }
+
+                                                                            .produto .preco {
+                                                                              font-size: 1.3rem;
+                                                                                color: #e91e63;
+                                                                                  font-weight: bold;
+                                                                                  }
+
+                                                                                  /* Botões */
+                                                                                  button, a.btn {
+                                                                                    display: inline-block;
+                                                                                      background: #e91e63;
+                                                                                        color: white;
+                                                                                          padding: 8px 15px;
+                                                                                            border-radius: 5px;
+                                                                                              text-decoration: none;
+                                                                                                transition: background 0.3s;
+                                                                                                  border: none;
+                                                                                                    cursor: pointer;
+                                                                                                    }
+
+                                                                                                    button:hover, a.btn:hover {
+                                                                                                      background: #c2185b;
+                                                                                                      }
+
+                                                                                                      /* Tabelas (listar.php) */
+                                                                                                      table {
+                                                                                                        width: 90%;
+                                                                                                          margin: 20px auto;
+                                                                                                            border-collapse: collapse;
+                                                                                                              background: #fff;
+                                                                                                                border-radius: 8px;
+                                                                                                                  overflow: hidden;
+                                                                                                                  }
+
+                                                                                                                  th, td {
+                                                                                                                    padding: 12px;
+                                                                                                                      border-bottom: 1px solid #ddd;
+                                                                                                                        text-align: center;
+                                                                                                                        }
+
+                                                                                                                        th {
+                                                                                                                          background: #111;
+                                                                                                                            color: #fff;
+                                                                                                                            }
